@@ -1,0 +1,34 @@
+/**************************************
+  Touchable and/or clickable feedback *
+ **************************************/
+
+%o-touchable {
+  --target-opacity: 0.53;
+  --accent-color: var(--yellow-color);
+  --transition-timing: 0.3s;
+  cursor: pointer;
+}
+
+// Decreases the opacity of the object
+.o-touchable--opacity {
+  @extend %o-touchable;
+  opacity: inherit;
+  transition: opacity var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    opacity: var(--target-opacity);
+  }
+}
+
+// Hihglights the object
+.o-touchable--highlight {
+  @extend %o-touchable;
+  color: inherit;
+  transition: color var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
