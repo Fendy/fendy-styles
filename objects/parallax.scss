@@ -7,14 +7,28 @@
   https://keithclark.co.uk/articles/pure-css-parallax-websites/            *
  ***************************************************************************/
 
+$parallax-perspective: 1px;
+
+/*
+  Calculates z and scale transformations
+ */
+@mixin parallax-perspective($distance: 0) {
+  transform: translateZ($distance * $parallax-perspective)
+    scale(1 + ($distance * -1 / 1));
+}
+
+/****************************
+  Parallax effect container *
+ ****************************/
+
 .o-parallax {
   width: 100%;
   height: 100vh;
   overflow: hidden;
   overflow-y: auto;
-  perspective: 1px;
+  perspective: $parallax-perspective;
   transform-style: preserve-3d;
-  // -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 
   // Ensure 3D is preserved no matter the markup
   &,
@@ -23,15 +37,18 @@
   }
 }
 
+/***************************
+  Group of parallax layers *
+ ***************************/
+
 .o-parallax__section {
   position: relative;
   height: 100vh;
-  // perspective: 1px;
 }
 
-@mixin parallax-perspective($distance: 0) {
-  transform: translateZ($distance * 1px) scale(1 + ($distance * -1 / 1));
-}
+/*********************
+  Parallaxing layers *
+ *********************/
 
 %o-parallax__layer {
   position: absolute;
@@ -39,9 +56,15 @@
   right: 0;
   bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   transform-origin: 50%;
-  // position: -webkit-sticky;
   border: 1px solid #000000;
+
+  // Fix mobile Safari scroll momentum
+  @supports (-webkit-overflow-scrolling: touch) {
+    position: -webkit-sticky;
+  }
 }
 
 .o-parallax__layer--fore {
@@ -66,4 +89,16 @@
   @extend %o-parallax__layer;
   @include parallax-perspective(-2);
   z-index: -10;
+}
+
+// Fix mobile Safari scroll momentum
+@supports (-webkit-overflow-scrolling: touch) {
+
+  .o-parallax {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .o-parallax__section {
+    perspective: $parallax-perspective;
+  }
 }
