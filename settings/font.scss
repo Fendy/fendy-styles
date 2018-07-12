@@ -1,0 +1,24 @@
+/***************************
+  Global font declarations *
+ ***************************/
+
+:root {
+  // Font-families
+  --system-font-stack: '-apple-system', 'system-ui', 'BlinkMacSystemFont',
+    'Segoe UI', 'Tahoma', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+
+  // Font-weights
+  --regular-weight: 400;
+  --semibold-weight: 600;
+  --heavy-weight: 800;
+  --black-weight: 900;
+
+  // Font-sizes
+  --xsmall-size: 10px;
+  --small-size: 12px;
+  --base-size: 16px;
+  --medium-size: 20px;
+  --large-size: 24px;
+  --hero-size: 60px;
+}

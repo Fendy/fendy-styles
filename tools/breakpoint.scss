@@ -1,0 +1,22 @@
+/***************************************
+  Utils for managing responsive styles *
+ ***************************************/
+
+/**
+ * Inlines a media query declaration with the passed content block
+ *
+ * @param  {number} $breakpoint The breakpoint to which respond to
+ * @param  {list} $media-type [('screen']   List of media types to which respond to
+ */
+@mixin respond-to($breakpoint, $media-type: ('screen')) {
+  // If no breakpoint is specified, assume a media type query
+  @if $breakpoint == null {
+    @media #{$media-type} {
+      @content;
+    }
+  } @else {
+    @media #{$media-type} and (min-width: #{$breakpoint}) {
+      @content;
+    }
+  }
+}
