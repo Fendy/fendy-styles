@@ -1,0 +1,30 @@
+/*********************
+  Global base styles *
+ *********************/
+
+/*
+  Define flexible box sizing
+  More on http://bit.ly/1A91I0J
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*
+  1) Emphasize legibility over rendering speed and geometric precision
+  2) Smooth the font on the level of the pixel
+  3) Render text with grayscale antialiasing
+ */
+body {
+  @include body-copy;
+  text-rendering: optimizeLegibility; /* [1] */
+  -webkit-font-smoothing: antialiased; /* [2] */
+  -moz-osx-font-smoothing: grayscale; /* [3] */
+  font-smoothing: antialiased;
+}
