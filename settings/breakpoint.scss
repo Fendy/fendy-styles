@@ -2,9 +2,9 @@
   Media Query Breakpoints *
  **************************/
 
-:root {
-  // Breakpoints are expressed as min-widths
-  --mob-l: 415px;
-  --tab: 769px;
-  --lap: 1025px;
-}
+// Breakpoints are expressed as min-widths
+$breakpoints: (
+  'mob-l': 415px,
+  'tab': 769px,
+  'lap': 1025px
+);

@@ -11,6 +11,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^8.6.5",
+    "css-mqpacker": "^6.0.2",
     "node-sass": "^4.9.2",
     "parcel-bundler": "^1.9.6"
   }
