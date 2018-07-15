@@ -9,6 +9,7 @@
 @import './tools/typography.scss';
 @import './tools/typography.mixins.scss';
 @import './tools/breakpoint.scss';
+@import './tools/responsive.scss';
 
 /*  Generic  */
 @import './generic/reset.scss';
@@ -24,3 +25,7 @@
 /*  Components  */
 
 /*  Utilities  */
+@import './utilities/text.scss';
+@import './utilities/color.scss';
+@import './utilities/display.scss';
+@import './utilities/space.scss';

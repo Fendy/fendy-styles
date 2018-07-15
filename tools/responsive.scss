@@ -1,0 +1,22 @@
+/***************************************
+  Utils for creating responsive styles *
+ ***************************************/
+
+@mixin responsive-states() {
+  @if $breakpoints == null {
+    @error 'Please make sure the breakpoint settings are imported :)';
+  }
+  @each $name, $key in $breakpoints {
+
+    /*
+        For every breakpoint, define responsive class for given rules
+        (content) inside it's corresponding media query.
+       */
+    @include respond-to(#{$name}) {
+
+      &\@#{$name} {
+        @content;
+      }
+    }
+  }
+}

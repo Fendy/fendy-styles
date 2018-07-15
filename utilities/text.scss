@@ -1,0 +1,69 @@
+/***************************
+  Utility classes for text *
+ ***************************/
+
+$truncate-lines: 3 !default;
+
+/*
+   Alignment
+  */
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-align-baseline {
+  vertical-align: baseline;
+}
+
+.u-align-bottom {
+  vertical-align: bottom;
+}
+
+.u-align-middle {
+  vertical-align: middle;
+}
+
+.u-align-top {
+  vertical-align: top;
+}
+
+/*
+   Transformations
+  */
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+.u-text-lowercase {
+  text-transform: lowercase;
+}
+
+.u-text-capitalize {
+  text-transform: capitalize;
+}
+
+/*
+   Truncate
+  */
+.u-text-truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.u-text-truncate--multiline {
+  display: -webkit-box;
+  -webkit-line-clamp: $truncate-lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
