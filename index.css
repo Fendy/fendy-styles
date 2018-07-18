@@ -2,13 +2,16 @@
 
 /*  Settings  */
 @parcel-import './settings/color.css';
-@parcel-import './settings/font.css';
+
+@import './settings/font.css';
+
 @parcel-import './settings/breakpoint.css';
 
 /*  Tools  */
 @parcel-import './tools/typography.css';
 @parcel-import './tools/responsive.css';
 @parcel-import './tools/color.css';
+@parcel-import './tools/interactive.css';
 
 /*  Generic  */
 @parcel-import './generic/reset.css';
@@ -18,7 +21,7 @@
 
 /*  Objects  */
 @parcel-import './objects/flex-grid.css';
-@parcel-import './objects/touchable.css';
+@parcel-import './objects/interactive.css';
 @parcel-import './objects/parallax.css';
 
 /*  Components  */

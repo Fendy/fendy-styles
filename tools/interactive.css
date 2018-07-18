@@ -1,9 +1,8 @@
-/**************************************
-  Touchable and/or clickable feedback *
- **************************************/
+/******************************************
+  Utils for handling interactive elements *
+ ******************************************/
 
-/* Decreases the opacity of the object */
-.o-touchable--opacity {
+@define-mixin interactive-opacity {
   --target-opacity: 0.53;
   --timing: 0.3s;
   cursor: pointer;
@@ -15,9 +14,7 @@
     opacity: var(--target-opacity);
   }
 }
-
-/* Hihglights the object */
-.o-touchable--highlight {
+@define-mixin interactive-highlight {
   --accent-color: var(--yellow-color);
   --timing: 0.3s;
   color: inherit;

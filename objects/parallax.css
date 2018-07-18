@@ -22,8 +22,7 @@
   scroll-behavior: smooth;
 
   /* Ensure 3D is preserved no matter the markup */
-  &,
-  * {
+  & * {
     transform-style: preserve-3d;
   }
 
@@ -63,26 +62,26 @@
       position: -webkit-sticky;
     }
   }
-}
 
-.o-parallax__layer--fore {
-  --distance: 0.4;
-  --z: 5;
-}
+  & .o-parallax__layer--fore {
+    --distance: 0.4;
+    --z: 5;
+  }
 
-.o-parallax__layer--base {
-  --distance: 0;
-  --z: 0;
-}
+  & .o-parallax__layer--base {
+    --distance: 0;
+    --z: 0;
+  }
 
-.o-parallax__layer--back {
-  --distance: -1;
-  --z: -5;
-}
+  & .o-parallax__layer--back {
+    --distance: -1;
+    --z: -5;
+  }
 
-.o-parallax__layer--deep {
-  --distance: -2;
-  --z: -10;
+  & .o-parallax__layer--deep {
+    --distance: -2;
+    --z: -10;
+  }
 }
 
 /* Fix mobile Safari scroll momentum */

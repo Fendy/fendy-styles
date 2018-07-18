@@ -1,0 +1,13 @@
+/**************************************
+  Touchable and/or clickable feedback *
+ **************************************/
+
+/* Decreases the opacity of the object */
+.o-touchable--opacity {
+  @mixin interactive-opacity;
+}
+
+/* Hihglights the object */
+.o-touchable--highlight {
+  @mixin interactive-highlight;
+}
