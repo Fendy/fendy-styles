@@ -1,0 +1,13 @@
+/***************************
+  Utils for managing color *
+ ***************************/
+
+@define-mixin color-class $color {
+  .u-$(color) {
+    color: var(--$(color)-color);
+  }
+
+  .u-$(color)--bkg {
+    background-color: var(--$(color)-color);
+  }
+}

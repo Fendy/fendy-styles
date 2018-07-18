@@ -4,15 +4,21 @@
   "description": "👨‍🎨 Solid architecture and foundations for modern UIs",
   "main": "index.scss",
   "scripts": {
-    "build": "parcel build ./index.scss -d ./css -o styles.min.css"
+    "watch": "parcel watch ./index.css -d ./css -o styles.css",
+    "build": "parcel build ./index.css -d ./css -o syles.min.css"
   },
   "repository": "git@github.com:Fendy/fendy-styles.git",
   "author": "Luis Fernando Saavedra Meza <dev@fsvdr.me>",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^8.6.5",
+    "autoprefixer": "^9.0.0",
     "css-mqpacker": "^6.0.2",
-    "node-sass": "^4.9.2",
-    "parcel-bundler": "^1.9.6"
+    "parcel-bundler": "^1.9.6",
+    "postcss-cli": "^5.0.1",
+    "postcss-import": "^11.1.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-parcel-import": "^0.0.2",
+    "postcss-preset-env": "^5.2.2",
+    "postcss-simple-vars": "^4.1.0"
   }
 }

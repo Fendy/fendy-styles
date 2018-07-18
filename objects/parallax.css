@@ -1,0 +1,98 @@
+/***************************************************************************
+  Parallax Effect using CSS 3D transforms 🔥                               *
+                                                                           *
+  Based on:                                                                *
+  https://developers.google.com/web/updates/2016/12/performant-parallaxing *
+  https://codepen.io/scottkellum/details/bHEcA                             *
+  https://keithclark.co.uk/articles/pure-css-parallax-websites/            *
+ ***************************************************************************/
+
+/****************************
+   Parallax effect container *
+  ****************************/
+
+.o-parallax {
+  --perspective: 1px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  perspective: var(--perspective);
+  transform-style: preserve-3d;
+  scroll-behavior: smooth;
+
+  /* Ensure 3D is preserved no matter the markup */
+  &,
+  * {
+    transform-style: preserve-3d;
+  }
+
+  /***************************
+    Group of parallax layers *
+   ***************************/
+
+  & .o-parallax__section {
+    position: relative;
+    height: 100vh;
+  }
+
+  /*********************
+    Parallaxing layers *
+   *********************/
+
+  & .o-parallax__layer--fore,
+  & .o-parallax__layer--base,
+  & .o-parallax__layer--back,
+  & .o-parallax__layer--deep {
+    --distance: 0;
+    --z: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50%;
+    transform: translateZ(calc(var(--distance) * var(--perspective)))
+      scale(calc(1 + (var(--distance) * -1 / 1)));
+    z-index: var(--z);
+
+    /* Fix mobile Safari scroll momentum */
+    @supports (-webkit-overflow-scrolling: touch) {
+      position: -webkit-sticky;
+    }
+  }
+}
+
+.o-parallax__layer--fore {
+  --distance: 0.4;
+  --z: 5;
+}
+
+.o-parallax__layer--base {
+  --distance: 0;
+  --z: 0;
+}
+
+.o-parallax__layer--back {
+  --distance: -1;
+  --z: -5;
+}
+
+.o-parallax__layer--deep {
+  --distance: -2;
+  --z: -10;
+}
+
+/* Fix mobile Safari scroll momentum */
+@supports (-webkit-overflow-scrolling: touch) {
+
+  .o-parallax {
+    -webkit-overflow-scrolling: touch;
+
+    & .o-parallax__section {
+      perspective: var(--perspective);
+    }
+  }
+}

@@ -2,8 +2,6 @@
   Utility classes for text *
  ***************************/
 
-$truncate-lines: 3 !default;
-
 /*
    Alignment
   */
@@ -61,8 +59,9 @@ $truncate-lines: 3 !default;
 }
 
 .u-text-truncate--multiline {
+  --truncate-lines: 3;
   display: -webkit-box;
-  -webkit-line-clamp: $truncate-lines;
+  -webkit-line-clamp: var(--truncate-lines);
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;

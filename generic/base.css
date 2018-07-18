@@ -22,7 +22,7 @@ html {
   3) Render text with grayscale antialiasing
  */
 body {
-  @include body-copy;
+  @mixin body-copy;
   text-rendering: optimizeLegibility; /* [1] */
   -webkit-font-smoothing: antialiased; /* [2] */
   -moz-osx-font-smoothing: grayscale; /* [3] */

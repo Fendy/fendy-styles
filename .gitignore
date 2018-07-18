@@ -3,3 +3,8 @@
 
 # Parcel
 .cache
+
+# Production code
+css/styles.css
+css/styles.js
+css/styles.map

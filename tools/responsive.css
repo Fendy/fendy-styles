@@ -1,0 +1,53 @@
+/***************************************
+  Utils for creating responsive styles *
+ ***************************************/
+
+/*
+  Wraps the provided rules into each declared custom media query
+ */
+@define-mixin responsive $selector {
+  $(selector) {
+    @mixin-content;
+  }
+  @media (--mobile-first) {
+    $(selector) {
+      @mixin-content;
+    }
+  }
+  @media (--large-mobile) {
+
+    $(selector)\@lm {
+      @mixin-content;
+    }
+  }
+  @media (--portrait-tablet) {
+
+    $(selector)\@pt {
+      @mixin-content;
+    }
+  }
+  @media (--medium-viewport) {
+
+    $(selector)\@mv {
+      @mixin-content;
+    }
+  }
+  @media (--large-viewport) {
+
+    $(selector)\@lv {
+      @mixin-content;
+    }
+  }
+  @media (--4k) {
+
+    $(selector)\@4k {
+      @mixin-content;
+    }
+  }
+  @media (--5k) {
+
+    $(selector)\@5k {
+      @mixin-content;
+    }
+  }
+}

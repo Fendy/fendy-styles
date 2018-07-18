@@ -1,0 +1,159 @@
+/******************************
+  Utility classes for spacing *
+ ******************************/
+
+/*********
+  Margin *
+ *********/
+
+/*
+  Measure definitions
+ */
+[class^="u-margin"] {
+  --margin: 1em;
+}
+
+[class^="u-margin-c"] {
+  --margin: 0;
+}
+
+[class^="u-margin-s"] {
+  --margin: 0.5em;
+}
+
+[class^="u-margin-m"] {
+  --margin: 1.5em;
+}
+
+[class^="u-margin-l"] {
+  --margin: 2em;
+}
+
+/*
+  Selectors definition
+ */
+@custom-selector :--base .u-margin-l, .u-margin-m, .u-margin, .u-margin-s, .u-margin-c;
+
+@custom-selector :--vertical .u-margin-l--v, .u-margin-m--v, .u-margin--v, .u-margin-s--v, .u-margin-c--v;
+
+@custom-selector :--horizontal .u-margin-l--h, .u-margin-m--h, .u-margin--h, .u-margin-s--h, .u-margin-c--h;
+
+@custom-selector :--top .u-margin-l--top, .u-margin-m--top, .u-margin--top, .u-margin-s--top, .u-margin-c--top;
+
+@custom-selector :--right .u-margin-l--right, .u-margin-m--right, .u-margin--right, .u-margin-s--right, .u-margin-c--right;
+
+@custom-selector :--bottom .u-margin-l--bottom, .u-margin-m--bottom, .u-margin--bottom, .u-margin-s--bottom, .u-margin-c--bottom;
+
+@custom-selector :--left .u-margin-l--left, .u-margin-m--left, .u-margin--left, .u-margin-s--left, .u-margin-c--left;
+
+/*
+  Responsive classes definition
+ */
+@mixin responsive :--base {
+  margin: var(--margin);
+}
+
+@mixin responsive :--vertical {
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+}
+
+@mixin responsive :--horizontal {
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+}
+
+@mixin responsive :--top {
+  margin-top: var(--margin);
+}
+
+@mixin responsive :--right {
+  margin-right: var(--margin);
+}
+
+@mixin responsive :--bottom {
+  margin-bottom: var(--margin);
+}
+
+@mixin responsive :--left {
+  margin-left: var(--margin);
+}
+
+
+/**********
+  Padding *
+ **********/
+
+/*
+  Measure definitions
+ */
+
+[class^="u-padding"] {
+  --padding: 1em;
+}
+
+[class^="u-padding-c"] {
+  --padding: 0;
+}
+
+[class^="u-padding-s"] {
+  --padding: 0.5em;
+}
+
+[class^="u-padding-m"] {
+  --padding: 1.5em;
+}
+
+[class^="u-padding-l"] {
+  --padding: 2em;
+}
+
+/*
+  Selectors definition
+ */
+@custom-selector :--base .u-padding-l, .u-padding-m, .u-padding, .u-padding-s, .u-padding-c;
+
+@custom-selector :--vertical .u-padding-l--v, .u-padding-m--v, .u-padding--v, .u-padding-s--v, .u-padding-c--v;
+
+@custom-selector :--horizontal .u-padding-l--h, .u-padding-m--h, .u-padding--h, .u-padding-s--h, .u-padding-c--h;
+
+@custom-selector :--top .u-padding-l--top, .u-padding-m--top, .u-padding--top, .u-padding-s--top, .u-padding-c--top;
+
+@custom-selector :--right .u-padding-l--right, .u-padding-m--right, .u-padding--right, .u-padding-s--right, .u-padding-c--right;
+
+@custom-selector :--bottom .u-padding-l--bottom, .u-padding-m--bottom, .u-padding--bottom, .u-padding-s--bottom, .u-padding-c--bottom;
+
+@custom-selector :--left .u-padding-l--left, .u-padding-m--left, .u-padding--left, .u-padding-s--left, .u-padding-c--left;
+
+/*
+  Responsive classes definition
+ */
+@mixin responsive :--base {
+  padding: var(--padding);
+}
+
+@mixin responsive :--vertical {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+@mixin responsive :--horizontal {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+@mixin responsive :--top {
+  padding-top: var(--padding);
+}
+
+@mixin responsive :--right {
+  padding-right: var(--padding);
+}
+
+@mixin responsive :--bottom {
+  padding-bottom: var(--padding);
+}
+
+@mixin responsive :--left {
+  padding-left: var(--padding);
+}

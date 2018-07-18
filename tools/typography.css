@@ -2,8 +2,8 @@
   Global typographic styles *
  ****************************/
 
-@mixin body-copy() {
-  font-family: var(--system-font-stack);
+@define-mixin body-copy {
+  font-family: system-ui;
   font-size: var(--base-size);
   font-weight: var(--regular-weight);
   line-height: 1.6;

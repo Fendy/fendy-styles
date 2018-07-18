@@ -1,0 +1,40 @@
+/**************************************
+  Utility classes for element display *
+ **************************************/
+
+@mixin responsive .u-block {
+  display: block;
+}
+
+@mixin responsive .u-inline {
+  display: inline;
+}
+
+
+@mixin responsive .u-inline-block {
+  display: inline-block;
+}
+
+.u-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.u-center--vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin responsive .u-hidden {
+  display: none;
+}
+
+@mixin responsive .u-visible {
+  visibility: visible;
+}
+
+@mixin responsive .u-invisible {
+  visibility: hidden;
+}

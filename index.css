@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*  Settings  */
+@parcel-import './settings/color.css';
+@parcel-import './settings/font.css';
+@parcel-import './settings/breakpoint.css';
+
+/*  Tools  */
+@parcel-import './tools/typography.css';
+@parcel-import './tools/responsive.css';
+@parcel-import './tools/color.css';
+
+/*  Generic  */
+@parcel-import './generic/reset.css';
+@parcel-import './generic/base.css';
+
+/*  Elements  */
+
+/*  Objects  */
+@parcel-import './objects/flex-grid.css';
+@parcel-import './objects/touchable.css';
+@parcel-import './objects/parallax.css';
+
+/*  Components  */
+
+/*  Utilities  */
+@parcel-import './utilities/text.css';
+@parcel-import './utilities/color.css';
+@parcel-import './utilities/display.css';
+@parcel-import './utilities/space.css';

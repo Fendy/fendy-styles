@@ -3,22 +3,22 @@
  ***************************/
 
 :root {
-  // Font-families
-  --system-font-stack: '-apple-system', 'system-ui', 'BlinkMacSystemFont',
-    'Segoe UI', 'Tahoma', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
 
-  // Font-weights
+  /* Font-weights */
+  --thin-weight: 100;
+  --extra-light-weight: 200;
+  --light-weight: 300;
   --regular-weight: 400;
+  --medium-weight: 500;
   --semibold-weight: 600;
+  --bold-weight: 700;
   --heavy-weight: 800;
   --black-weight: 900;
 
-  // Font-sizes
+  /* Font-sizes */
   --xsmall-size: 10px;
   --small-size: 12px;
   --base-size: 16px;
   --medium-size: 20px;
   --large-size: 24px;
-  --hero-size: 60px;
 }
