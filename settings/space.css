@@ -6,14 +6,17 @@
 
   /* Base values */
   --baseline: 1.2em;
-  --space-scale-ratio: 0.6;
+  --space-scale-ratio: 0.8;
 
   /* Space scale */
   --clear-space: 0;
   --small-space: calc(var(--baseline) * var(--space-scale-ratio));
-  --medium-space: calc(var(--baseline));
-  --large-space: calc(var(--baseline) / var(--space-scale-ratio));
-  --xlarge-space: calc(
+  --medium-space: calc(var(--baseline) / var(--space-scale-ratio));
+  --large-space: calc(
     var(--baseline) / var(--space-scale-ratio) / var(--space-scale-ratio)
+  );
+  --xlarge-space: calc(
+    var(--baseline) / var(--space-scale-ratio) / var(--space-scale-ratio) /
+    var(--space-scale-ratio)
   );
 }

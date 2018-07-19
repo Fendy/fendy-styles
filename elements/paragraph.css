@@ -1,0 +1,8 @@
+/*****************************************
+  Base styling for the paragraph element *
+ *****************************************/
+
+p {
+  max-width: 65ch;
+  opacity: 0.9;
+}

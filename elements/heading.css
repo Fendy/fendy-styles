@@ -8,6 +8,7 @@
   font-family: var(--display-font);
   font-weight: var(--bold-weight);
   line-height: var(--heading-line-height);
+  margin-bottom: var(--small-space);
 }
 
 h1 {

@@ -3,9 +3,7 @@
 /*  Settings  */
 @parcel-import './settings/color.css';
 @parcel-import './settings/breakpoint.css';
-
-@import './settings/font.css';
-
+@parcel-import './settings/font.css';
 @parcel-import './settings/space.css';
 
 /*  Tools  */
@@ -19,6 +17,8 @@
 @parcel-import './generic/base.css';
 
 /*  Elements  */
+@parcel-import './elements/heading.css';
+@parcel-import './elements/paragraph.css';
 
 /*  Objects  */
 @parcel-import './objects/flex-grid.css';
