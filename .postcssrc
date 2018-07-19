@@ -12,6 +12,7 @@
       }
     },
     "autoprefixer": {},
-    "css-mqpacker": {}
+    "css-mqpacker": {},
+    "postcss-discard-duplicates": {}
   }
 }
