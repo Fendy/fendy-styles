@@ -2,10 +2,11 @@
 
 /*  Settings  */
 @parcel-import './settings/color.css';
+@parcel-import './settings/breakpoint.css';
 
 @import './settings/font.css';
 
-@parcel-import './settings/breakpoint.css';
+@parcel-import './settings/space.css';
 
 /*  Tools  */
 @parcel-import './tools/typography.css';
@@ -28,6 +29,7 @@
 
 /*  Utilities  */
 @parcel-import './utilities/text.css';
+@parcel-import './utilities/typography.css';
 @parcel-import './utilities/color.css';
 @parcel-import './utilities/display.css';
 @parcel-import './utilities/space.css';

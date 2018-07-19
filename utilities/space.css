@@ -10,23 +10,23 @@
   Measure definitions
  */
 [class*='u-margin'] {
-  --margin: 1em;
+  --margin: var(--medium-space);
 }
 
 [class*='u-margin-c'] {
-  --margin: 0;
+  --margin: var(--clear-space);
 }
 
 [class*='u-margin-s'] {
-  --margin: 0.5em;
+  --margin: var(--small-space);
 }
 
 [class*='u-margin-m'] {
-  --margin: 1.5em;
+  --margin: var(--large-space);
 }
 
 [class*='u-margin-l'] {
-  --margin: 2em;
+  --margin: var(--xlarge-space);
 }
 
 /*
@@ -123,23 +123,23 @@
  */
 
 [class*='u-padding'] {
-  --padding: 1em;
+  --padding: var(--medium-space);
 }
 
 [class*='u-padding-c'] {
-  --padding: 0;
+  --padding: var(--clear-space);
 }
 
 [class*='u-padding-s'] {
-  --padding: 0.5em;
+  --padding: var(--small-space);
 }
 
 [class*='u-padding-m'] {
-  --padding: 1.5em;
+  --padding: var(--large-space);
 }
 
 [class*='u-padding-l'] {
-  --padding: 2em;
+  --padding: var(--xlarge-space);
 }
 
 /*

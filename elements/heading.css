@@ -1,0 +1,29 @@
+/***************************
+  Base styling for headers *
+ ***************************/
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+:--heading {
+  font-family: var(--display-font);
+  font-weight: var(--bold-weight);
+  line-height: var(--heading-line-height);
+}
+
+h1 {
+  font-size: var(--xxlarge-size);
+}
+
+h2 {
+  font-size: var(--xlarge-size);
+}
+
+h3 {
+  font-size: var(--large-size);
+}
+
+h4,
+h5,
+h6 {
+  font-size: var(--medium-size);
+}

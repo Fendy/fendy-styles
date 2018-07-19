@@ -1,0 +1,19 @@
+/************************
+  Global space measures *
+ ************************/
+
+:root {
+
+  /* Base values */
+  --baseline: 1.2em;
+  --scale-ratio: 0.6;
+
+  /* Space scale */
+  --clear-space: 0;
+  --small-space: calc(var(--baseline) * var(--scale-ratio));
+  --medium-space: calc(var(--baseline));
+  --large-space: calc(var(--baseline) / var(--scale-ratio));
+  --xlarge-space: calc(
+    var(--baseline) / var(--scale-ratio) / var(--scale-ratio)
+  );
+}

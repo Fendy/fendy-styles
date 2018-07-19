@@ -15,10 +15,30 @@
   --heavy-weight: 800;
   --black-weight: 900;
 
-  /* Font-sizes */
-  --xsmall-size: 10px;
-  --small-size: 12px;
-  --base-size: 16px;
-  --medium-size: 20px;
-  --large-size: 24px;
+  /* Base values */
+  --base-size: 1em;
+  --scale-ratio: 1.2;
+  --line-height: 1.4;
+  --heading-line-height: 1.2;
+
+  /* Type scale */
+  --xsmall-size: calc(1em / (var(--scale-ratio) * var(--scale-ratio)));
+  --small-size: calc(1em / var(--scale-ratio));
+  --medium-size: calc(1em * var(--scale-ratio));
+  --large-size: calc(1em * var(--scale-ratio) * var(--scale-ratio));
+  --xlarge-size: calc(
+    1em * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio)
+  );
+  --xxlarge-size: calc(
+    1em * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) *
+    var(--scale-ratio)
+  );
+}
+
+@media (--large-viewport) {
+
+  :root {
+    --base-size: 1.25em;
+    --scale-ratio: 1.25;
+  }
 }
