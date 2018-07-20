@@ -33,3 +33,4 @@
 @parcel-import './utilities/color.css';
 @parcel-import './utilities/display.css';
 @parcel-import './utilities/space.css';
+@parcel-import './utilities/grid-columns.css';
